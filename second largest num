@@ -1,0 +1,15 @@
+ var arr = arrayOf(11,9,7,12,23,45)
+    var secLast = 0
+    var first = 0
+    var largeTillNow = 0
+    //largest 2nd largest number 
+    for(i in 0..arr.size-1){ //0->1, 
+        
+        if(arr[i]>largeTillNow){
+            secLast = first
+            first = largeTillNow
+           largeTillNow = arr[i]
+        }
+        
+    }
+    println("sec large - "+first)
