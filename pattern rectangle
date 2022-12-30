@@ -1,0 +1,25 @@
+*****
+*   *
+*   *
+*   *
+*   *
+*****
+
+  var input = 5
+   for(i in 0..input-1){
+       print("*")
+   } 
+   print("\n")
+   for(i in 0..input-2){
+       for(j in 0..input-1){
+           if(j==0 || j==input-1){
+             print("*")
+           }else{
+               print(" ")
+           }
+       }
+       print("\n")
+       } 
+   for(i in 0..input-1){
+       print("*")
+   } 
