@@ -1,0 +1,13 @@
+ var result = when(0){
+       1,0,3->"ok1"
+       2->"ok2"
+       else -> "elsee"
+   }
+   print(result)
+   
+   
+   when (x) {
+    is Int -> print(x + 1)
+    is String -> print(x.length + 1)
+    is IntArray -> print(x.sum())
+}
