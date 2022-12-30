@@ -1,0 +1,35 @@
+class A(var item:String){
+     fun show(){
+         print("yo function here")
+     }
+ }
+ 
+fun main() {
+
+ var it = A(", string here!")
+ it.show()
+ print(it.item)
+}
+
+//open 
+
+open class A(var item:String){
+     var x = "parent"
+     fun show(){
+         print("parent function here")
+     }
+ }
+ 
+ class B : A("child"){
+     fun sh(){
+         print(x)
+     }
+ }
+ 
+fun main() {
+
+ var it = B()
+ it.sh()
+ it.show()
+ //print(it.item)
+}
