@@ -1,0 +1,22 @@
+class A(var item1:String) 
+ 
+fun main() {
+
+ var it = A("kal")
+
+    print(it.item1)
+}
+
+
+
+class A{
+     var item = ""
+ }
+ 
+fun main() {
+
+ var it = A()
+ it.item = "kal"
+
+    print(it.item)
+}
