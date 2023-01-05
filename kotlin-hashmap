@@ -1,0 +1,13 @@
+fun main() {
+   var map : HashMap<String,Int> = HashMap<String,Int>()
+   var str = "abcdeabc"
+    var output = ""
+   for(i in 0..str.length-1){
+       map.put(str[i]+"",map.getOrDefault(str[i]+"",0)+1)
+   }
+   
+   for(mapres in map.keys){
+       output = output + mapres + map[mapres]
+   }
+   print(output)
+}
