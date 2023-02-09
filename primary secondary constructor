@@ -1,0 +1,18 @@
+class Person(val firstName:String, val lastName:String)
+{
+
+    init{
+            println("person ! $firstName and $lastName")
+
+    }
+    
+    constructor() : this("sec first name","sec last name"){
+                    println("sec constructor")
+
+    }
+}
+
+fun main() {
+    val per = Person("kal","mesh") //to call primary, Person() to call secondary constructor
+    println("Hello, world!!! $per.firstName and $per.lastName")
+}
