@@ -1,0 +1,12 @@
+    //val per = Person("kal","mesh") //to call primary, Person() to call secondary constructor
+    //println("Hello, world!!! $per.firstName and $per.lastName")
+    //
+    val list = listOf("11","222",null)
+    list.filterNotNull() //ignore nulls
+    .filter{it.toInt()%2==0} //allowed only divisible by 2
+    .map{it.length} //return list with size of string, other than string
+    .forEach{
+        println(it)
+    }
+    
+}
