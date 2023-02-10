@@ -1,0 +1,11 @@
+fun main() = runBlocking{
+    
+    val job: Job= launch{
+        println("before delay")
+        delay(1000)
+        println("doing some work")
+    }
+    
+    job.join()
+    println("finished")  
+}
