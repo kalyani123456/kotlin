@@ -9,3 +9,37 @@ fun main() = runBlocking{
     job.join()
     println("finished")  
 }
+
+//async and await
+fun main() = runBlocking{
+    
+    val job: Deferred<Int> = async{
+        println("before delay")
+        delay(1000)
+        println("doing some work")
+        1
+    }
+    
+    val res : Int= job.await()
+    println("finished returned value $res")
+    
+    
+    
+}
+
+//timeout
+import kotlinx.coroutines.*
+
+fun main() = runBlocking{
+    
+    val omg = withTimeoutOrNull(2000){
+        for(i in 1..1000){
+            delay(100)
+            println(i)
+        }
+        5
+    }
+    println("finished returned value $omg")
+  
+    
+}
